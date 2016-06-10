@@ -23,6 +23,6 @@ public:
 	UFUNCTION()
 	void ReceiveMessage(FChatMessage Message);
 
-	virtual void BeginDestroy() override;
+	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
 	virtual void BeginPlay() override;
 };

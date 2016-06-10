@@ -17,7 +17,7 @@ void UMessageReceiver::BeginPlay()
 	MC->GetMessageSystem()->AddMessageReceiver(this);
 }
 
-void UMessageReceiver::BeginDestroy()
+void UMessageReceiver::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
 	UMasterController* MC = Cast<UMasterController>(GetOwner()->GetGameInstance());
 	MC->GetMessageSystem()->RemoveMessageReceiver(this);
