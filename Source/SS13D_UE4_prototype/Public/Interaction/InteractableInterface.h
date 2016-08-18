@@ -18,6 +18,9 @@ class SS13D_UE4_PROTOTYPE_API IInteractableInterface
 	GENERATED_IINTERFACE_BODY()
 
 public:
-	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category="Interaction")
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Interaction")
 	void OnInteract(APawn* Pawn);
+
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Interaction")
+	void OnItemInteract(APawn* Pawn, UItem* Item);
 };
