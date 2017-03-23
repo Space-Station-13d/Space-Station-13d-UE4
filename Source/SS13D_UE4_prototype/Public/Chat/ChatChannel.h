@@ -5,7 +5,7 @@
 #include "ChatChannel.generated.h"
 
 UENUM(BlueprintType)
-enum class EChatChannel
+enum class EChatChannel : uint8
 {
 	/* Admin-Only chat. */
 	Admin,
